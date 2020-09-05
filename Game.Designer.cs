@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.labelGameOver = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
             this.ScoreLabel = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
@@ -45,21 +44,13 @@
             this.labelGameOver.Text = "GameOver";
             this.labelGameOver.Visible = false;
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(484, 130);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(35, 13);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "label1";
-            // 
             // ScoreLabel
             // 
             this.ScoreLabel.AutoSize = true;
-            this.ScoreLabel.Location = new System.Drawing.Point(563, 198);
+            this.ScoreLabel.Font = new System.Drawing.Font("Sitka Small", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ScoreLabel.Location = new System.Drawing.Point(44, 46);
             this.ScoreLabel.Name = "ScoreLabel";
-            this.ScoreLabel.Size = new System.Drawing.Size(35, 13);
+            this.ScoreLabel.Size = new System.Drawing.Size(51, 19);
             this.ScoreLabel.TabIndex = 2;
             this.ScoreLabel.Text = "label2";
             // 
@@ -69,7 +60,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.ScoreLabel);
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.labelGameOver);
             this.Name = "Game";
             this.Text = "Form1";
@@ -81,7 +71,6 @@
         #endregion
 
         private System.Windows.Forms.Label labelGameOver;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label ScoreLabel;
     }
 }
